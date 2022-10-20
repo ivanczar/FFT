@@ -61,6 +61,13 @@ public class Complex {
     }
     
     
+    public Complex getRootsOfUnity(int number){
+        double angle = (2*Math.PI)/number;
+        
+        return new Complex(Math.cos(angle), -Math.sin(angle));
+    }
+    
+    
     public static void main(String[] args) {
         Complex first = new Complex(2, 4);
         Complex second = new Complex(6, 5);
@@ -73,6 +80,9 @@ public class Complex {
         
         Complex fifth = first.multiply(second);
         System.out.println("Multiplying " + fifth);
+        
+        Complex six = first.getRootsOfUnity(4);
+        System.out.println(six);
     }
 
 }
