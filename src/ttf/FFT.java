@@ -8,7 +8,7 @@ package ttf;
  *
  * @author skyhawk
  */
-public class TTF {
+public class FFT {
 
     /**
      * @param args the command line arguments
